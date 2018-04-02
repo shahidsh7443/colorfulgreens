@@ -12,6 +12,8 @@ $('#skill1id').addClass('wpb_animate_when_almost_visible wpb_fadeInRight fadeInR
 $('#skill2id').addClass('wpb_animate_when_almost_visible wpb_fadeInRight fadeInRight wpb_start_animation animated');
 $('#our_servid a').on('click',function(e){ e.preventDefault();});
 $('#blogid a').on('click',function(e){ e.preventDefault();});
+$('.teammemcls a').on('click',function(e){ e.preventDefault();});
+$('.sc_layouts_logo').attr('id','moblayout');
 $('.top_panel_custom_335').attr('id','headd');
 $('.sc_content_width_1_1').addClass('myheader');
 });

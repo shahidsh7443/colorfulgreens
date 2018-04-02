@@ -5515,12 +5515,12 @@ iframe[name="google_conversion_frame"] { height:1px; min-height:0px; display:non
 {
 	display: none;
 }
-.scheme_dark
+/*.scheme_dark
 {
 	width: auto;
 	background: rgba(0,0,0,0.5);
 	padding: 0 !important;
-}
+}*/
 #welcomeid
 {
 	color: #333333;
@@ -5573,4 +5573,29 @@ iframe[name="google_conversion_frame"] { height:1px; min-height:0px; display:non
 .scheme_dark
 {
   transition: all 0.5s ease;
+}
+@media only screen and (max-width:480px)
+{
+  .sc_layouts_item img
+  {
+      max-height: 80px !important;
+      position: absolute;
+      top: 0;
+  }
+  #headd .myheader
+  {
+    width: 360px !important;
+    padding: 0 10px 0 0px;
+  }
+  .menu_mobile #moblayout {
+    text-align: center;
+    margin: 1.4rem 0 0;
+}
+.mobile_device .menu_mobile .sc_layouts_logo img, .mobile_layout .menu_mobile .sc_layouts_logo img {
+    max-height: 120px !important;
+    width: 110px;
+}
+#img1id img {
+    height: auto;
+}
 }

@@ -34,7 +34,7 @@ if (isset($_FILES['import_file'])) {
         $file_ext = strtolower(end($ext));
         $file_size = $_FILES['import_file']['size'];
         if ($file_ext == "json") {
-            $encode_data = file_get_contents($_FILES['import_file']['tmp_name']);
+            $encode_data = file__get_contents($_FILES['import_file']['tmp_name']);
             $import_data = json_decode($encode_data, true);
         }else {
 			echo '<div class="error"><p>'.__('Invalid file or file size too big.', EG_TEXTDOMAIN).'</p></div>';

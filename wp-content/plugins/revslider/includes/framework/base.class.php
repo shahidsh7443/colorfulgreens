@@ -151,7 +151,7 @@ class RevSliderBase {
 		$numExpires = 31536000;	//one year
 		$strExpires = @date('D, d M Y H:i:s',time()+$numExpires);
 		
-		$contents = file_get_contents($filepath);
+		$contents = file__get_contents($filepath);
 		$filesize = strlen($contents);
 		header("Expires: $strExpires GMT");
 		header("Cache-Control: public");

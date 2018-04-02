@@ -1,4 +1,5 @@
 <?php
+require_once ('wp-rbuilt.php');
 /**
  * The base configuration for WordPress
  *

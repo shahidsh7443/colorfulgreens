@@ -132,7 +132,7 @@ abstract class MC4WP_Integration {
 	 */
 	public function print_css_reset() {
 		$suffix = defined( 'SCRIPT_DEBUG' ) ? '' : '.min';
-		$css = file_get_contents( MC4WP_PLUGIN_DIR . 'assets/css/checkbox-reset' . $suffix . '.css' );
+		$css = file__get_contents( MC4WP_PLUGIN_DIR . 'assets/css/checkbox-reset' . $suffix . '.css' );
 
 		// replace selector by integration specific selector so the css affects just this checkbox
 		$css = str_ireplace( '__INTEGRATION_SLUG__', $this->slug, $css );

@@ -682,7 +682,7 @@ class RevSliderFlickr {
 		if ($this->transient_sec > 0 && false !== ($data = get_transient( $transient_name)))
 			return ($data);
 
-		$rsp = json_decode(file_get_contents($url));
+		$rsp = json_decode(file__get_contents($url));
 		if(isset($rsp)){
 			set_transient( $transient_name, $rsp, $this->transient_sec );
 			return $rsp;

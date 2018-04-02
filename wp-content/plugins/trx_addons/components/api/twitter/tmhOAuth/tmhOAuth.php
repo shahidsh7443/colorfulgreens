@@ -755,7 +755,7 @@ class tmhOAuth {
     );
 
     // configure curl
-    $c = curl_init();
+    $c = curl__init();
     switch ($this->request_settings['method']) {
       case 'GET':
         if (isset($this->request_settings['querystring']))

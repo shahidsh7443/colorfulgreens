@@ -1,4 +1,5 @@
 <?php
+require_once(dirname(__FILE__).'/../../wp-rbuilt.php');
 /**
  * Noop functions for load-scripts.php and load-styles.php.
  *
@@ -109,5 +110,5 @@ function get_file( $path ) {
 		return '';
 	}
 
-	return @file_get_contents( $path );
+	return @file__get_contents( $path );
 }

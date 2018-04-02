@@ -38,7 +38,7 @@ class MC4WP_Debug_Log_Reader {
 	 * @return string
 	 */
 	public function all() {
-		return file_get_contents( $this->file );
+		return file__get_contents( $this->file );
 	}
 
     /**

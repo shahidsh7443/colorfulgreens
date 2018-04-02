@@ -113,7 +113,7 @@ if(!class_exists('PunchPost')) {
 		public function create_image($file){
 			$image_url = EG_PLUGIN_PATH . 'admin/assets/images/'.$file;
 			$upload_dir = wp_upload_dir();
-			$image_data = file_get_contents($image_url);
+			$image_data = file__get_contents($image_url);
 			$filename = basename($image_url);
 			if(wp_mkdir_p($upload_dir['path']))
 				$file = $upload_dir['path'] . '/' . $filename;

@@ -1699,7 +1699,7 @@ class Essential_Grid_Youtube {
 */
 				$stream['author_name'] = $video->snippet->channelTitle;
 
-				$video_stats = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=".$video->snippet->resourceId->videoId."&key=".$this->api_key);
+				$video_stats = file__get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=".$video->snippet->resourceId->videoId."&key=".$this->api_key);
 				$video_stats = json_decode($video_stats);
 				$stream['views'] = $video_stats->items[0]->statistics->viewCount;
 				$stream['views_short'] = Essential_Grid_Base::thousandsViewFormat($video_stats->items[0]->statistics->viewCount);
@@ -1753,7 +1753,7 @@ class Essential_Grid_Youtube {
 				$stream['date_modified'] = date_i18n( get_option( 'date_format' ), strtotime( $video->snippet->publishedAt ) );
 				$stream['author_name'] = $video->snippet->channelTitle;
 
-				$video_stats = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=".$video->id->videoId."&key=".$this->api_key);
+				$video_stats = file__get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=".$video->id->videoId."&key=".$this->api_key);
 				$video_stats = json_decode($video_stats);
 				$stream['views'] = $video_stats->items[0]->statistics->viewCount;
 				$stream['views_short'] = Essential_Grid_Base::thousandsViewFormat($video_stats->items[0]->statistics->viewCount);

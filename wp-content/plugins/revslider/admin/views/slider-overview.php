@@ -664,7 +664,7 @@ $stable_version = get_option('revslider-stable-version', '4.1');
 		<div class="rs-dash-title-wrap">
 			<div class="rs-dash-title"><?php _e("Update History",'revslider'); ?></div>				
 		</div>	
-		<div class="rs-update-history"><?php echo file_get_contents(RS_PLUGIN_PATH.'release_log.html'); ?></div>
+		<div class="rs-update-history"><?php echo file__get_contents(RS_PLUGIN_PATH.'release_log.html'); ?></div>
 	</div>
 	
 </div>

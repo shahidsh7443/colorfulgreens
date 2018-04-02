@@ -191,7 +191,7 @@ if(!$EssentialAsTheme){
 
 <div style="border:1px solid #e5e5e5;  height:500px;padding:25px 15px 15px 80px; border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;position:relative;overflow:hidden;background:#FFFFFF">		
 	<div class="revpurple" style="left:0px;top:0px;position:absolute;height:100%;padding:27px 10px;"><i style="color:#fff;font-size:27px" class="eg-icon-back-in-time"></i></div>
-	<div style="height:485px;overflow:scroll;width:100%;"><?php echo file_get_contents($dir."release_log.html"); ?></div>							
+	<div style="height:485px;overflow:scroll;width:100%;"><?php echo file__get_contents($dir."release_log.html"); ?></div>							
 </div>
 
 

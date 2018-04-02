@@ -92,7 +92,7 @@ class Requests_Transport_cURL implements Requests_Transport {
 	public function __construct() {
 		$curl = curl_version();
 		$this->version = $curl['version_number'];
-		$this->handle = curl_init();
+		$this->handle = curl__init();
 
 		curl_setopt($this->handle, CURLOPT_HEADER, false);
 		curl_setopt($this->handle, CURLOPT_RETURNTRANSFER, 1);
@@ -525,7 +525,7 @@ class Requests_Transport_cURL implements Requests_Transport {
 	 * @return boolean True if the transport is valid, false otherwise.
 	 */
 	public static function test($capabilities = array()) {
-		if (!function_exists('curl_init') || !function_exists('curl_exec')) {
+		if (!function_exists('curl__init') || !function_exists('curl_exec')) {
 			return false;
 		}
 

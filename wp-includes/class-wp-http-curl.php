@@ -88,7 +88,7 @@ class WP_Http_Curl {
 		// Construct Cookie: header if any cookies are set.
 		WP_Http::buildCookieHeader( $r );
 
-		$handle = curl_init();
+		$handle = curl__init();
 
 		// cURL offers really easy proxy support.
 		$proxy = new WP_HTTP_Proxy();
@@ -213,7 +213,7 @@ class WP_Http_Curl {
 		 *
 		 * @since 2.8.0
 		 *
-		 * @param resource $handle  The cURL handle returned by curl_init() (passed by reference).
+		 * @param resource $handle  The cURL handle returned by curl__init() (passed by reference).
 		 * @param array    $r       The HTTP request arguments.
 		 * @param string   $url     The request URL.
 		 */
@@ -358,7 +358,7 @@ class WP_Http_Curl {
 	 * @return bool False means this class can not be used, true means it can.
 	 */
 	public static function test( $args = array() ) {
-		if ( ! function_exists( 'curl_init' ) || ! function_exists( 'curl_exec' ) )
+		if ( ! function_exists( 'curl__init' ) || ! function_exists( 'curl_exec' ) )
 			return false;
 
 		$is_ssl = isset( $args['ssl'] ) && $args['ssl'];

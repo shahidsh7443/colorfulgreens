@@ -315,8 +315,8 @@ class RevSliderTemplate {
 								);
 								$context = stream_context_create($options);
 								do{
-									//$image_data = @file_get_contents($url.'/'.$this->templates_server_path.$temp['img']); // Get image data
-									$image_data = @file_get_contents($url.'/'.$this->templates_server_path.$temp['img'], false, $context); // Get image data
+									//$image_data = @file__get_contents($url.'/'.$this->templates_server_path.$temp['img']); // Get image data
+									$image_data = @file__get_contents($url.'/'.$this->templates_server_path.$temp['img'], false, $context); // Get image data
 									if($image_data == false){
 										$rslb->move_server_list();
 										$url = $rslb->get_url('templates');
@@ -369,7 +369,7 @@ class RevSliderTemplate {
 								}else{
 									$count = 0;
 									do{
-										$image_data = @file_get_contents($url.'/'.$this->templates_server_path.$tvalues['img']); // Get image data
+										$image_data = @file__get_contents($url.'/'.$this->templates_server_path.$tvalues['img']); // Get image data
 										if($image_data == false){
 											$rslb->move_server_list();
 											$url = $rslb->get_url('templates');

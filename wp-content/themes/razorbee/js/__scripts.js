@@ -16,4 +16,6 @@ $('.teammemcls a').on('click',function(e){ e.preventDefault();});
 $('.sc_layouts_logo').attr('id','moblayout');
 $('.top_panel_custom_335').attr('id','headd');
 $('.sc_content_width_1_1').addClass('myheader');
+/*$($("header").children()[1]).attr('id',"headtag");*/
+$($("header").children()[1]).addClass('grad');
 });

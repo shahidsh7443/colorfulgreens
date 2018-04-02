@@ -1,0 +1,83 @@
+/* Essential Grid styles
+----------------------------------------------------------------- */
+
+.esg-grid i[class*="eg-icon-"] {
+	color: #fff;
+	-webkit-transition: color .5s ease;
+	    -ms-transition: color .5s ease;
+	        transition: color .5s ease;
+}
+.esg-grid a:hover i[class*="eg-icon-"] {
+	color: #fff;
+}
+.esg-navigationbutton i[class*="eg-icon-"] {
+	color: #fff;
+}
+.esg-navigationbutton:hover i[class*="eg-icon-"] {
+	color: #fff;
+}
+
+.flat-light .esg-filters .esg-sortbutton-order,
+.flat-light .esg-filters .esg-cartbutton-order {
+	line-height:36px;
+	margin:0;
+}
+.flat-light .esg-filters .esg-sortbutton {
+	padding-right: 0;
+}
+
+.esgbox-overlay {
+	z-index: 28010 !important;
+}
+.esgbox-opened {
+	z-index: 28030 !important;
+}
+
+.esg-loadmore-wrapper{
+	margin-top: 8.9em;
+}
+
+.esg-navigationbutton.esg-loadmore{
+	font-size: 14px;
+	padding: 16px 20px;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+
+.esg-grid .eg-icon-tint:before{
+	font-size: 12px;
+	content:'\e8e4\e8e4\e8e4';
+	font-family: 'fontello';
+	letter-spacing: 10px;
+	display: inline;
+}
+
+.eg-greenthumb-skin-2-element-10-a a:before{
+	font-size: 16px;
+	content: '\e93e';
+	font-family: 'fontello';
+	font-weight: 700;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.greenthumb-skin-2 div.esg-pagination{
+	margin-top: 3.8em;
+}
+
+.greenthumb-skin-2 div.esg-pagination .esg-navigationbutton{
+	width: 9px;
+	height: 9px;
+	margin-right: 1em;
+	overflow:hidden;
+	text-indent: -100px;
+	background: transparent;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	padding: 0;
+	line-height: 0;
+	display: block;
+	float: left;
+}
+
